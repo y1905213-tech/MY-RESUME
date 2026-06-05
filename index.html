@@ -3,49 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Yashwanth M - Full Stack Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-top: 20px;
+            object-fit: cover;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .summary {
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .degree {
+            font-weight: 600;
+            color: #667eea;
+            font-size: 1.05em;
+        }
+
+        .school {
+            color: #777;
+            margin-top: 5px;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f5f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-category li {
+            padding: 8px 0;
+            color: #555;
+        }
+
+        .skill-category li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .hobbies {
+            background: #f5f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            color: #555;
+            font-size: 1.05em;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.05em;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        footer {
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 40px 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1><u>My Resume</u></h1>
-    <h2>YASHWANTH.M</h2>
-    <img src="./Screenshot 2025-08-18 224447.png" alt="Yashwanth M" width="200">
-    <hr>
-    <h2>Summary</h2>
-    <ul>
-    <li>I am Yashwanth</li>
-    <li>I am a professional <mark>WEB DEVELOPER</mark> </li>
-    </ul>
-    <hr>
-    <h2>Education</h2>
-    <dl>
-        <dt><b>High school</b></dt>
-        <dd> Narayana E-Techno School</dd>
-        <dt><b>College</b></dt>
-        <dd>R.M.D Engineering College</dd>
-    </dl>
-    <hr>
-    <h2>Skills</h2>
-    <ol type="1">
-        <li>Full Stack Web Development
-        <ul>
-            <li>Front-end Web Developer</li>
-            <li>Back-end Web Developer</li>
-        </ul>
-        </li>
-        <li>C ++ Programming</li>
-        <li>Python Programming</li>
-    </ol>
-    <hr>    
-    <h2>Hobbies</h2>
-    <p>Playing <mark>Cricket</mark>, Listening Music, Watching Movies</p>
-    <hr>
-    <h2>Contact Me</h2>
-    <a href="./contact.html">Contact Me</a>
-    <hr>
-    <footer>
-        <p>&lt;&copy;&gt; 2025 Yashwanth M.<b> All rights reserved.</b></p>    
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Yashwanth M</h1>
+            <p>Full Stack Web Developer</p>
+            <img src="./Screenshot 2025-08-18 224447.png" alt="Yashwanth M" class="profile-img">
+        </header>
 
+        <main>
+            <section>
+                <h2>About Me</h2>
+                <p class="summary">I am a professional web developer with expertise in both front-end and back-end development. Passionate about creating clean, efficient, and user-friendly web applications.</p>
+            </section>
 
+            <section>
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="degree">High School</div>
+                    <div class="school">Narayana E-Techno School</div>
+                </div>
+                <div class="education-item">
+                    <div class="degree">Bachelor's Degree</div>
+                    <div class="school">R.M.D Engineering College</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>Front-end Development</li>
+                            <li>Back-end Development</li>
+                            <li>Full Stack Development</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <ul>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Interests</h2>
+                <div class="hobbies">
+                    <p>Playing Cricket • Listening Music • Watching Movies</p>
+                </div>
+            </section>
+
+            <section style="text-align: center; margin-top: 50px;">
+                <a href="./contact.html" class="contact-btn">Get In Touch</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Yashwanth M. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
